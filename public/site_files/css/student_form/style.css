@@ -1,0 +1,51 @@
+body{
+    font-family: sans-serif;
+}
+.div{
+    height: 55px;
+    width: 3px;
+    background-color: orange;
+  
+
+}
+h1{
+    border-bottom: solid 3px orange;
+    padding-bottom: 12px;
+    margin-left: 20px;
+}
+.main-div{
+    height: 45px;
+    width: 3px;
+    background-color: orange;
+    right: 0%;
+    top: 0%;
+}
+label{
+    font-size: 20px;
+    margin-top: 20px;
+}
+input:focus{
+        outline: none !important; 
+        box-shadow: 0 0 10px orange !important;
+    border:3px solid orange !important;
+}
+select:focus{
+        outline: none !important; 
+        box-shadow: 0 0 10px orange !important;
+    border:3px solid orange !important;
+}
+textarea:focus{
+        outline: none !important; 
+        box-shadow: 0 0 10px orange !important;
+    border:3px solid orange !important;
+}
+button{
+    color: white  !important; 
+    background-color: orange  !important;
+    font-size: 25px  !important;
+}
+button:hover{
+    color: orange  !important;
+    border: solid orange 1px  !important;
+    background-color: white  !important;
+}

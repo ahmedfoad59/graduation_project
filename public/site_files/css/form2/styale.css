@@ -1,0 +1,66 @@
+ 
+
+.main h2
+{
+text-align: center;
+font-weight: 750;
+margin: 35px 0 20px 0;
+ }
+ /** start inputs**/
+ .inputs
+ {
+    text-align: end;
+    margin: 20px 20px 5px 20px;
+ 
+  }
+  .inputs label
+  {
+    color: #000;
+    font-weight: 700;
+  }
+  .inputs input 
+  {
+    border: none;
+    border-bottom: #000 2px dotted;
+  }
+
+ .empty 
+ {
+    background-color: #000;
+    width: 25%;
+    height: 4px;
+    margin: auto;
+    
+ }
+
+/*table*/
+.tabl
+{
+     text-align: end;
+     border:5px solid #000;
+     width: 100%;
+}
+ 
+.tabl thead 
+{
+     border: 5px solid #000;
+}
+
+.tabl tr
+{
+    border-bottom: 5px solid #000;
+    
+}
+
+.tabl th 
+{
+    /* background-color: red; */
+    padding-left: 2px;
+    border: 2px solid #000;
+    text-align: center;
+}
+
+.tabl td
+{
+    text-align: center;
+}

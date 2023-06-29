@@ -1,0 +1,49 @@
+.main
+{
+    padding: 15px;
+}
+
+
+/*search*/
+
+.search input
+{
+    padding: 0;
+    padding:1px 95px 1px 10px;
+    border: 2px solid #cac2c2;
+    margin-right: 25px;
+}
+.btn-search,.btn-add
+{
+    background-color:#00bdbb    ;
+    color: #fff;
+    border: none;
+    padding: 7px 18px;
+}
+.btn-search i
+,.btn-add i
+{
+    padding-right: 5px;
+}
+
+
+
+/*table*/
+.bt-action-edit
+{
+    background-color:#00bdbb ;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+}
+
+.bt-action-delete
+{
+    
+    background-color:red ;
+    border: none;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+}

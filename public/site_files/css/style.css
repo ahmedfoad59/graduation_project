@@ -1,0 +1,116 @@
+body
+{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif !important;
+
+}
+::selection {
+    color: white;
+    background: orange;
+  }
+
+.nav-link
+{
+    color: white !important;
+    font-size: 16px !important;
+    font-weight: bold !important;
+    transition: all 1s !important;
+
+}
+#main-nav
+{
+    transition: background-color 2s;
+}
+.nav-link:focus, .nav-link:hover
+{
+    color: orange !important;
+}
+.home-img
+{
+    height: 100vh !important;
+}
+.home-desc 
+{
+    background-color: rgba(142, 63, 7, 0.5) !important;
+}
+.back
+{
+    background-image: url(../imgaes/back1.jpg);
+    background-size: 100% 100%;
+    background-position: cover;
+    height: 100vh;
+}
+.back2
+{
+    background-image: url(../imgaes/back2.jpg);
+    background-size: 100% 100%;
+    background-position: cover;
+    height: 100vh;
+}
+.back3
+{
+    background-image: url(../imgaes/back3.jpg);
+    background-size: 100% 100%;
+    background-position: cover;
+    height: 100vh;
+}
+.home-btn
+{
+    transition: all 1s !important;
+    background-color: transparent ;
+    border: solid 1.5px orange !important; 
+    color: white !important;
+}
+.home-btn:hover
+{
+background-color: orange !important;
+}
+#home .button
+{
+    text-decoration: none !important;
+    color: whitesmoke !important;
+}
+.carousel .carousel-indicators button
+{
+    width: 10px !important;
+    height: 5px!important;  
+    background-color: white !important;
+    border: 1px solid transparent;
+    border-radius: 20px !important;
+}
+.carousel .carousel-indicators button.active
+{
+width: 20px !important ;
+}
+/********** /home ********/
+.about-icons
+{
+    color: orange;
+}
+#about a
+{
+    text-decoration: none !important;
+    color: rgb(0, 0, 0) !important;
+    font-size: 14px !important;
+
+}
+.list-style 
+{
+    background-color:  orange;
+    border: solid 1px orange;
+    border-radius: 4%;
+}
+.card
+{
+    border: none !important;
+}
+.card-btn
+{
+    background-color: orange !important;
+}
+
+
+.color
+{
+    color: orange;
+}
