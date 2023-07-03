@@ -19,7 +19,7 @@
             <button class="btn-search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i>search </button> --}}
 
 
-            <form action="{{route('index_add_course')}}" method="get">
+            <form action="{{route('show4')}}" method="get">
 
               <div class="row">
 
@@ -31,7 +31,7 @@
                   <div class="col-md-4">
                       <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i>
                           @lang('site.search')</button>
-                      <a href="{{route('show_add_course')}}" class="btn btn-primary"><i
+                      <a href="{{route('show4')}}" class="btn btn-primary"><i
                               class="fa fa-plus"></i> @lang('site.add')</a>
 
                   </div>
@@ -45,13 +45,13 @@
         <!-- start table  -->
         <table class="table mt-5">
             <thead>
-              <tr class="bg-dark" style="color: #fff;">
+                <tr class=" nn" style="color: #fff;">
                 <th scope="col">#</th>
                 <th scope="col">name</th>
-                <th scope="col">course name</th>
-                <th scope="col">course hour number</th>
+                <th scope="col">collage id</th>
+                {{-- <th scope="col">course hour number</th>
                 <th scope="col">course code</th>
-                <th scope="col">phone</th>
+                <th scope="col">phone</th> --}}
                 <th scope="col">action</th>
               </tr>
             </thead>
@@ -61,14 +61,14 @@
               <tr>
                 <th scope="row"> {{$index}}</th>
                 <td>{{$row->name}}</td>
-                <td>{{$row->course_name}}</td>
-                <td>{{$row->course_hour_number}}</td>
+                <td>{{$row->collage_id}}</td>
+                {{-- <td>{{$row->course_hour_number}}</td>
                 <td>{{$row->course_code}}</td>
-                <td>{{$row->phone}}</td>
+                <td>{{$row->phone}}</td> --}}
                 <td>
                   {{-- <button class="bt-action-edit"><i class="fa-solid fa-pen-to-square"></i> edit</button>  --}}
                   <button class="bt-action-delete"> <i class="fa-sharp fa-solid fa-trash"></i> delete</button>
-                  <button class="btn btn-warning me-md-2 w-15"> <a href="{{route('print_add_course',$row->id)}}" class="">print</a> </button>
+                  <button class="btn btn-warning me-md-2 w-15"> <a href="{{route('print4',$row->id)}}" class="">print</a> </button>
 
                   {{-- <form action="{{route('dashboard.'.$module_name_plural.'.destroy', $row)}}" method="POST" style="display: inline-block">
                     {{csrf_field()}}

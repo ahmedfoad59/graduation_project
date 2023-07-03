@@ -10,31 +10,33 @@
 </head>
 <body> 
  
-  <div class="main">
+  <div class="main"> 
     <h3> محضر اجتماع </h3>
 
     <!-- start form -->
+    <form class="row g-4 needs-validation "  action="{{ route('store5') }}"  method="POST" novalidate  >
+      @csrf
     <div class="form">
 
       <div class="row">
 
         <div class="col-3" >
-          <input type="time">     <label> : الوقت</label>
+          <input type="time" name="time">     <label> : الوقت</label>
         </div>
 
         <div class=" col-3">
-          <input type="text" >     <label> : المكان</label>
+          <input type="text" name="plase">     <label> : المكان</label>
         </div>
 
 
           <div class="col-3">
-            <input type="date">     <label> : التاريخ </label>
+            <input type="date" name="date">     <label> : التاريخ </label>
 
           </div>
 
 
           <div class="col-3">
-           (  <input type="text"> )     <label> الاجتماع  : رقم</label>
+           (  <input type="text" name="num_meet"> )     <label> الاجتماع  : رقم</label>
   
           </div>
 
@@ -42,11 +44,11 @@
         
        
           <div class=" col-6 mt-5">
-            <input type="number" >     <label> : عدد الغائبين</label>
+            <input type="number" name="studetn_num_fals">     <label> : عدد الغائبين</label>
           </div>
   
           <div class=" col-6 mt-5">
-            <input type="number" >     <label> : عدد الحاضرين</label>
+            <input type="number" name="studetn_num_true">     <label> : عدد الحاضرين</label>
           </div>
   
 
@@ -54,36 +56,36 @@
            
   
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> : الموضوع الاول  </label>
+            <input type="text" class="tests" name="subject1">     <label> : الموضوع الاول  </label>
   
           </div>
 
 
           
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> : التوصيات </label>
+            <input type="text" class="tests" name="Recommendations1">     <label> : التوصيات </label>
   
           </div>
 
           
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> : الموضوع الثاني  </label>
+            <input type="text" class="tests" name="subject2">     <label> : الموضوع الثاني  </label>
   
           </div>
 
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> :  التوصيات </label>
+            <input type="text" class="tests" name="Recommendations2">     <label> :  التوصيات </label>
   
           </div>
 
              
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> : الموضوع الثالت  </label>
+            <input type="text" class="tests" name="subject3">     <label> : الموضوع الثالت  </label>
   
           </div>
 
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> :  التوصيات </label>
+            <input type="text" class="tests" name="Recommendations3">     <label> :  التوصيات </label>
   
           </div>
 
@@ -94,7 +96,7 @@
 
           <div class=" mt-5 ">
             
-            <input type="text" class="tests">  
+            <input type="text" class="tests" name="dr_name">  
             <label> :  المرشد  الاكاديمي</label>
  
   
@@ -102,9 +104,11 @@
 
 
       </div>
+      <input class="btn btn-warning me-md-2 w-15" type="submit" value="حفظ">
 
 
     </div>
+</form>
 
   </div>
 

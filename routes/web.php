@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\voteController;
 
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -81,19 +82,19 @@ Route::get('/', function () {
     Route::post('/update/{id}', 'update')->name('update');
     Route::get('/edit/{id}', 'edit')->name('edit');
     Route::get('/delet/{id}', 'destroy')->name('delet');
-});
+}); 
 
 
 Route::controller(FormController::class)->group(function () {
     // 11111111111111111111111111111111111111111111
     Route::get('/index1', 'index1')->name('index1');
-    Route::get('/show1', 'show1')->name('show1');
+    Route::get('/show1', 'show1')->name('show1'); 
     Route::post('/store1', 'store1')->name('store1');
     Route::get('print1/{id}', 'print1')->name('print1');
 
     // 22222222222222222222222222222222222222222222
     Route::get('/index2', 'index2')->name('index2');
-    Route::get('/show2', 'show2')->name('show2');
+    Route::get('/show2', 'show2')->name('show2'); 
     Route::post('/store2', 'store2')->name('store2');
     Route::get('print2/{id}', 'print2')->name('print2');
 
@@ -116,6 +117,22 @@ Route::controller(FormController::class)->group(function () {
     Route::get('print5/{id}', 'print5')->name('print5');
 
 });
+
+
+
+Route::controller(voteController::class)->group(function () {
+    // 11111111111111111111111111111111111111111111
+    Route::get('/votes/index', 'index')->name('votes/index');
+    Route::get('/votes/show', 'show')->name('votes/show');
+    Route::post('/votes/store', 'store')->name('votes/store');
+    Route::get('/votes/print1/{id}', 'print1')->name('votes/print1');
+
+  
+
+});
+
+
+
 Route::group(
     [
         'prefix'     => LaravelLocalization::setLocale(),

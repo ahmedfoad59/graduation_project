@@ -251,9 +251,9 @@
       </div>
 {{-- forms 1,2,3,4,5 --}}
 {{-- 1 --}}
-      <div class="square">
+      <div class="square"> 
         <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
-        <h4> <a href="{{ route('index1') }}" class="px-3">   استماره اضافه مقرر</a> </h4>
+        <h4> <a href="{{ route('index1') }}" class="px-3">   بطاقه متابعه طالب    </a> </h4>
         <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
           <br>
           <button>المزيد</button>
@@ -263,7 +263,8 @@
 {{-- 2 --}}
 <div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
-  <h4> <a href="{{ route('index2') }}" class="px-3">   استماره اضافه مقرر</a> </h4>
+  <h4> <a href="{{ route('index2') }}" class="px-3"> بيان باسماء الطلاب للمرشد
+  </a> </h4>
   <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
     <br>
     <button>المزيد</button>
@@ -271,19 +272,21 @@
 </div>
 
 {{-- 3 --}}
-<div class="square">
+{{-- <div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
-  <h4> <a href="{{ route('index3') }}" class="px-3">   استماره اضافه مقرر</a> </h4>
+  <h4> <a href="{{ route('index3') }}" class="px-3">  كشف حضور وغياب الطلاب
+    اجتماع الارشاد الاكاديمي</a> </h4>
   <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
     <br>
     <button>المزيد</button>
   </p>
-</div>
+</div> --}}
 
 {{-- 4 --}}
 <div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
-  <h4> <a href="{{ route('index4') }}" class="px-3">   استماره اضافه مقرر</a> </h4>
+  <h4> <a href="{{ route('index4') }}" class="px-3">   اجتماع فردي
+  </a> </h4>
   <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
     <br>
     <button>المزيد</button>
@@ -293,13 +296,24 @@
 {{-- 5 --}}
 <div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
-  <h4> <a href="{{ route('index5') }}" class="px-3">   استماره اضافه مقرر</a> </h4>
+  <h4> <a href="{{ route('index5') }}" class="px-3">   محضر اجتماع
+  </a> </h4>
   <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
     <br>
     <button>المزيد</button>
   </p>
 </div>
 
+
+{{-- 5 --}}
+<div class="square">
+  <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
+  <h4> <a href="{{ route('votes/index') }}" class="px-3">   استماره التصويت</a> </h4>
+  <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
+    <br>
+    <button>المزيد</button>
+  </p>
+</div>
 
 
 

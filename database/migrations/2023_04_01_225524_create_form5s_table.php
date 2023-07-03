@@ -16,7 +16,7 @@ class CreateForm5sTable extends Migration
         Schema::create('form5s', function (Blueprint $table) {
             $table->id();
             $table->string('num_meet')->nullable();
-            $table->string('date')->nullable();
+            $table->string('date')->nullable(); 
             $table->string('plase')->nullable();
             $table->string('time')->nullable();
             $table->string('studetn_num_true')->nullable();
@@ -29,6 +29,7 @@ class CreateForm5sTable extends Migration
 
             $table->string('subject3')->nullable();
             $table->string('Recommendations3')->nullable();
+            $table->string('dr_name')->nullable();
             
             $table->timestamps();
         });

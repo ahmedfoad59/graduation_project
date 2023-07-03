@@ -13,19 +13,19 @@
   <div class="main">
     <h3> اجتماع فردي</h3>
 
-    <!-- start form -->
-    <form class="row g-4 needs-validation "  action="{{ route('stor1') }}"  method="POST" novalidate  >
+    <!-- start form --> 
+    <form class="row g-4 needs-validation "  action="{{ route('store4') }}"  method="POST" novalidate  >
       @csrf
     <div class="form">
 
       <div class="row">
 
         <div class="col-6" >
-          <input type="text" name="" >     <label> : الرقم الاكاديمي</label>
+          <input type="text" name="collage_id" >     <label> : الرقم الاكاديمي</label>
         </div>
 
         <div class=" col-6">
-          <input type="text"  name="" >     <label> : اسم الطالب</label>
+          <input type="text"  name="name" >     <label> : اسم الطالب</label>
         </div>
 
 
@@ -50,19 +50,19 @@
            
   
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="subject1" >     <label> <b>-</b> </label>
   
           </div>
              <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="subject2" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="subject3" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests"> name=""      <label> <b>-</b> </label>
+            <input type="text" class="tests"  name="subject4" >     <label> <b>-</b> </label>
   
           </div>
 
@@ -73,19 +73,19 @@
            
   
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="Recommendations1" >     <label> <b>-</b> </label>
   
           </div>
              <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="Recommendations2" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="Recommendations3" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests" name="" >     <label> <b>-</b> </label>
+            <input type="text" class="tests" name="Recommendations4" >     <label> <b>-</b> </label>
   
           </div>
 
@@ -95,21 +95,20 @@
       
           <div class="col-6 mt-5  " style="margin-bottom: 15px;">
             <label style="font-size: 25px; margin:0 10px;"> الطالب</label>  
-             <input type="text" class="tests mt-2">  <b>:التوقيع</b>
+             <input disabled type="text" class="tests mt-2" >  <b>:التوقيع</b>
   
           </div>
 
 
           <div class="col-6 mt-5  " style="margin-bottom: 15px;">
             <label style="font-size: 25px; margin:0 10px;"> المرشد الاكاديمي</label>  
-             <input type="text" class="tests mt-2">  <b>:التوقيع</b>
+             <input disabled type="text" class="tests mt-2">  <b>:التوقيع</b>
   
           </div>
 
 
       </div>
       <input class="btn btn-warning me-md-2 w-15" type="submit" value="حفظ">
-
     </div>
     </form>
   </div>

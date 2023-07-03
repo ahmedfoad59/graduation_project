@@ -45,7 +45,7 @@
         <!-- start table  -->
         <table class="table mt-5">
             <thead>
-              <tr class="bg-dark" style="color: #fff;">
+              <tr class=" nn" style="color: #fff;">
                 <th scope="col">#</th>
                 <th scope="col">name</th>
                 <th scope="col">course name</th>

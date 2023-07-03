@@ -6,41 +6,50 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <style>
+      @media print {
+          #print_Button {
+              display: none;
+          }
+      }
 
+  </style> 
 </head>
-<body> 
+<body id="print"> 
  
   <div class="main">
     <h3> اجتماع فردي</h3>
 
-    <!-- start form -->
+    <!-- start form --> 
+    {{-- <form class="row g-4 needs-validation "  action="{{ route('store4') }}"  method="POST" novalidate  >
+      @csrf --}}
     <div class="form">
 
       <div class="row">
 
         <div class="col-6" >
-          <input type="text">     <label> : الرقم الاكاديمي</label>
+          <input disabled value="{{$row->collage_id}}" type="text" name="collage_id" >     <label> : الرقم الاكاديمي</label>
         </div>
 
         <div class=" col-6">
-          <input type="text" >     <label> : اسم الطالب</label>
+          <input disabled value="{{$row->name}}" type="text"  name="name" >     <label> : اسم الطالب</label>
         </div>
 
 
           <!-- <div class="col-4">
-            <input type="text">     <label> : اسم الطالب</label>
+            <input disabled  type="text">     <label> : اسم الطالب</label>
 
           </div>
 
 
           <div class="col-8 mt-5">
-            <input type="text">     <label> : اسم عضو هيئه التدريس</label>
+            <input disabled  type="text">     <label> : اسم عضو هيئه التدريس</label>
   
           </div>
 
           
           <div class="col-4 mt-5">
-            <input type="text">     <label> : الماده  </label>
+            <input disabled type="text">     <label> : الماده  </label>
   
           </div> -->
 
@@ -48,19 +57,19 @@
            
   
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->subject1}}" type="text" class="tests" name="subject1" >     <label> <b>-</b> </label>
   
           </div>
              <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->subject2}}" type="text" class="tests" name="subject2" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->subject3}}" type="text" class="tests" name="subject3" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->subject4}}" type="text" class="tests"  name="subject4" >     <label> <b>-</b> </label>
   
           </div>
 
@@ -71,19 +80,19 @@
            
   
           <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->Recommendations1}}" type="text" class="tests" name="Recommendations1" >     <label> <b>-</b> </label>
   
           </div>
              <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->Recommendations2}}" type="text" class="tests" name="Recommendations2" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->Recommendations3}}" type="text" class="tests" name="Recommendations3" >     <label> <b>-</b> </label>
   
           </div>
    <div class="col-12 mt-4 ">
-            <input type="text" class="tests">     <label> <b>-</b> </label>
+            <input disabled value="{{$row->Recommendations4}}" type="text" class="tests" name="Recommendations4" >     <label> <b>-</b> </label>
   
           </div>
 
@@ -93,23 +102,24 @@
       
           <div class="col-6 mt-5  " style="margin-bottom: 15px;">
             <label style="font-size: 25px; margin:0 10px;"> الطالب</label>  
-             <input type="text" class="tests mt-2">  <b>:التوقيع</b>
+             <input disabled   type="text" class="tests mt-2" >  <b>:التوقيع</b>
   
           </div>
 
 
           <div class="col-6 mt-5  " style="margin-bottom: 15px;">
             <label style="font-size: 25px; margin:0 10px;"> المرشد الاكاديمي</label>  
-             <input type="text" class="tests mt-2">  <b>:التوقيع</b>
+             <input disabled type="text" class="tests mt-2">  <b>:التوقيع</b>
   
           </div>
 
 
       </div>
-
+      <button class="btn btn-warning me-md-2 w-15"  id="print_Button" type="button"  onclick="printDiv()">طباعه</button>
+      {{-- <input disabled  class="btn btn-warning me-md-2 w-15" type="submit" value="حفظ"> --}}
 
     </div>
-
+    {{-- </form> --}}
   </div>
 
 
@@ -117,5 +127,17 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 
+
+<script type="text/javascript">
+  function printDiv() {
+      var printContents = document.getElementById('print').innerHTML;
+      var originalContents = document.body.innerHTML;
+      document.body.innerHTML = printContents;
+      window.print();
+      document.body.innerHTML = originalContents;
+      location.reload();
+  }
+
+</script>
 </body>
 </html>

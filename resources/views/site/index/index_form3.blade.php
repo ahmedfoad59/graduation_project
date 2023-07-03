@@ -19,7 +19,7 @@
             <button class="btn-search"><i class="fa-sharp fa-solid fa-magnifying-glass"></i>search </button> --}}
 
 
-            <form action="{{route('index_add_course')}}" method="get">
+            <form action="{{route('show3')}}" method="get">
 
               <div class="row">
 
@@ -31,7 +31,7 @@
                   <div class="col-md-4">
                       <button class="btn btn-primary" type="submit"><i class="fa fa-search"></i>
                           @lang('site.search')</button>
-                      <a href="{{route('show_add_course')}}" class="btn btn-primary"><i
+                      <a href="{{route('show3')}}" class="btn btn-primary"><i
                               class="fa fa-plus"></i> @lang('site.add')</a>
 
                   </div>
@@ -45,7 +45,7 @@
         <!-- start table  -->
         <table class="table mt-5">
             <thead>
-              <tr class="bg-dark" style="color: #fff;">
+              <tr class=" nn" style="color: #fff;">
                 <th scope="col">#</th>
                 <th scope="col">name</th>
                 <th scope="col">course name</th>

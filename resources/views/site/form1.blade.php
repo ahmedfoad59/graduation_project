@@ -11,14 +11,14 @@
  
   <div class="main">
     <h3> بطاقه متابعه طالب</h3>
-    <form class="row g-4 needs-validation "  action="{{ route('stor1') }}"  method="POST" novalidate  >
+    <form class="row g-4 needs-validation "  action="{{ route('store1') }}"  method="POST" novalidate  >
       @csrf
     <!-- start form -->
     <div class="form">
 
-      <div class="row">
+      <div class="row"> 
 
-        <div class="col-4" >
+        <div class="col-4" > 
           <input type="text" name="collage_id">     <label> : الرقم الاكاديمي</label>
         </div>
 

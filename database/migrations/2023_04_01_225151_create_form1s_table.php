@@ -11,7 +11,7 @@ class CreateForm1sTable extends Migration
      *
      * @return void
      */
-    public function up()
+    public function up() 
     {
         Schema::create('form1s', function (Blueprint $table) {
             $table->id();
