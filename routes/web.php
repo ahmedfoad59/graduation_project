@@ -40,9 +40,12 @@ Route::get('/clear', function () {
 
 Route::get('/', function () {
     return view('site.home');
-});
+}); 
 
-// Route::get('/studentform', function () { 
+Route::get('/ourProject', function () {
+    return view('site.ourproject');
+})->name('ourproject');
+// Route::get('/studentform', function () {  
 //     return view('site.student_form');
 // })->name('show');
 //    Route::get('student','StudentController@index')->name('show');

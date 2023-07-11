@@ -32,7 +32,7 @@
       </div>
       <nav>
         <ul>
-          <li><a  href="{{ route('ourproject') }}">learning programs</a></li>
+          <li><a href="{{ route('ourproject') }}">learning programs</a></li>
           <li><a href="#Articles">academic metrices</a></li>
           <li><a href="#Features">sudent academic </a></li>
           <li><a href="#Articles"> learning education</a></li>
@@ -116,7 +116,7 @@
   <!--content-->
   <div class="content">
       <div class="container">
-      <div class="square">
+      {{-- <div class="square">
         <img src="{{ asset('site_files/home/imgaes/libraries.jpg') }}">
         <h4> المكتبات </h4>
         <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
@@ -212,7 +212,7 @@
           <button>المزيد</button>
         </p>
       </div>
-
+ --}}
 
 
 
@@ -223,45 +223,45 @@
 
 
 
-      {{-- <div class="square">
+      <div class="square">
         <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
         <h4>  <a href="{{ route('index_student') }}" class="px-3">  تقديم استماره</a> </h4>
         <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
           <br>
           <button>المزيد</button>
         </p>
-      </div> --}}
+      </div>
 
-      {{-- <div class="square">
+      <div class="square">
         <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
         <h4> <a href="{{ route('index_withdraw') }}" class="px-3">   استماره سحب مقرر</a></h4>
         <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
           <br>
           <button>المزيد</button>
         </p>
-      </div> --}}
+      </div>
 
-      {{-- <div class="square">
+      <div class="square">
         <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
         <h4> <a href="{{ route('index_add_course') }}" class="px-3">   استماره اضافه مقرر</a> </h4>
         <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
           <br>
           <button>المزيد</button>
         </p>
-      </div> --}}
+      </div>
 {{-- forms 1,2,3,4,5 --}}
 {{-- 1 --}}
-      {{-- <div class="square"> 
+      <div class="square"> 
         <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
         <h4> <a href="{{ route('index1') }}" class="px-3">   بطاقه متابعه طالب    </a> </h4>
         <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
           <br>
           <button>المزيد</button>
         </p>
-      </div> --}}
+      </div>
 
 {{-- 2 --}}
-{{-- <div class="square">
+<div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
   <h4> <a href="{{ route('index2') }}" class="px-3"> بيان باسماء الطلاب للمرشد
   </a> </h4>
@@ -269,7 +269,7 @@
     <br>
     <button>المزيد</button>
   </p>
-</div> --}}
+</div>
 
 {{-- 3 --}}
 {{-- <div class="square">
@@ -283,7 +283,7 @@
 </div> --}}
 
 {{-- 4 --}}
-{{-- <div class="square">
+<div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
   <h4> <a href="{{ route('index4') }}" class="px-3">   اجتماع فردي
   </a> </h4>
@@ -291,10 +291,10 @@
     <br>
     <button>المزيد</button>
   </p>
-</div> --}}
+</div>
 
 {{-- 5 --}}
-{{-- <div class="square">
+<div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
   <h4> <a href="{{ route('index5') }}" class="px-3">   محضر اجتماع
   </a> </h4>
@@ -302,18 +302,18 @@
     <br>
     <button>المزيد</button>
   </p>
-</div> --}}
+</div>
 
 
 {{-- 5 --}}
-{{-- <div class="square">
+<div class="square">
   <img src="{{ asset('site_files/home/imgaes/interview.jpg') }}">
   <h4> <a href="{{ route('votes/index') }}" class="px-3">   استماره التصويت</a> </h4>
   <p>إننا نقدم لطلابنا المعرفة المطلوبة في عدة مجالات من علوم الكمبيوتر بما في ذلك: مهارات البرمجة
     <br>
     <button>المزيد</button>
   </p>
-</div> --}}
+</div>
 
 
 

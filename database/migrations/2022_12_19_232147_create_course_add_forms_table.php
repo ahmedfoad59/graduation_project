@@ -22,7 +22,7 @@ class CreateCourseAddFormsTable extends Migration
             $table->string('program')->nullable();
             $table->string('level')->nullable();
             $table->string('national_number')->nullable();
-            $table->string('email')->unique()->nullable();
+            $table->string('email')->nullable();
             $table->string('dr_name')->nullable();
             $table->string('phone')->nullable();
 

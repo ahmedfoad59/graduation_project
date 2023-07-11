@@ -27,7 +27,7 @@ class StudentController extends Controller
     public function store(Request $request)
     {
 
-        // Log::info($request);
+        // Log::info($request); 
         // return   request()->input('name');
                    
 
@@ -51,7 +51,8 @@ class StudentController extends Controller
             'adress'                   => 'nullable|string|max:60',
             'phone'	                   => 'nullable|string|max:60',
             'home_phone'	           => 'nullable|string|max:60',
-            'email'	                   => 'nullable|email|max:255|unique:students,email',
+            'email'	                  => 'nullable|string|max:60',
+            // 'email'	                   => 'nullable|email|max:255|unique:students,email',
             'universty_id'	           => 'nullable|string|max:60',
             'college'	               => 'nullable|string|max:60',
             'department'	           => 'nullable|string|max:60',

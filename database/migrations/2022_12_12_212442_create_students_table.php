@@ -33,7 +33,7 @@ class CreateStudentsTable extends Migration
             $table->string('adress')->nullable();
             $table->string('phone')->nullable();
             $table->string('home_phone')->nullable();
-            $table->string('email')->unique()->nullable();
+            $table->string('email')->nullable();
 
             //college information
             $table->string('universty_id')->nullable();
@@ -52,7 +52,7 @@ class CreateStudentsTable extends Migration
             $table->string('f_adress')->nullable();
             $table->string('f_phone')->nullable();
             $table->string('f_home_phone')->nullable();
-            $table->string('f_email')->unique()->nullable();
+            $table->string('f_email')->nullable();
             // $table->string('email')->unique();
             $table->timestamps();
         });

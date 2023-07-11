@@ -4,6 +4,7 @@
     <link rel="stylesheet" href='{{ asset('site_files/css/styale.css') }}'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link  rel="stylesheet" href="{{ asset('site_files/css/bootstrap.min.css') }}" >
 <title>الاستمارت</title>
 </head>
 <body> 
@@ -46,9 +47,9 @@
             <thead>
               <tr class=" nn" style="color: #fff;">
                 <th scope="col">#</th>
-                <th scope="col">name</th>
-                <th scope="col">email</th>
-                <th scope="col">phone</th>
+                <th scope="col">الاسم</th>
+                <th scope="col">الايميل</th>
+                <th scope="col">التلفون</th>
                 <th scope="col">action</th>
               </tr>
             </thead>
@@ -62,7 +63,7 @@
                 <td>{{$row->phone}}</td>
                 <td>
                   {{-- <button class="bt-action-edit"><i class="fa-solid fa-pen-to-square"></i> edit</button>  --}}
-                  <button class="bt-action-delete"> <i class="fa-sharp fa-solid fa-trash"></i> delete</button>
+                  {{-- <button class="bt-action-delete"> <i class="fa-sharp fa-solid fa-trash"></i> delete</button> --}}
                   <button class="btn btn-warning me-md-2 w-15"> <a href="{{route('prints',$row->id)}}" class="">print</a> </button>
 
                   {{-- <form action="{{route('dashboard.'.$module_name_plural.'.destroy', $row)}}" method="POST" style="display: inline-block">
